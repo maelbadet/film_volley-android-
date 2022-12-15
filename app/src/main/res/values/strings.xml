@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">filmRecyclerView</string>
+    <string name="title_activity_activite_google_map">ActiviteGoogleMap</string>
 </resources>

@@ -1,6 +1,9 @@
 package com.example.filmrecyclerview;
 
+import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,9 +14,11 @@ public class Holder extends RecyclerView.ViewHolder {
     public TextView titre;
     public TextView Description;
     public TextView TitreOriginal;
-    public TextView UrlImage;
+    public ImageView UrlImage;
     public TextView DateSortie;
     public TextView LangueOriginale;
+
+
 
     public Holder(@NonNull View itemView) {
         super(itemView);
@@ -24,4 +29,6 @@ public class Holder extends RecyclerView.ViewHolder {
         DateSortie = itemView.findViewById(R.id.DateSortie);
         LangueOriginale = itemView.findViewById(R.id.LangueOriginale);
     }
+
+
 }

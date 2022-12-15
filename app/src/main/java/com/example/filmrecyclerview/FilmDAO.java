@@ -4,6 +4,7 @@ package com.example.filmrecyclerview;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 public interface FilmDAO {
 
     //test d'insert dans la bdd
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertAll(Film... users);
 
     @Delete
@@ -20,6 +21,7 @@ public interface FilmDAO {
 
     @Query("SELECT * FROM table_des_films")
     List<Film> getAll();
+
 
 
 }

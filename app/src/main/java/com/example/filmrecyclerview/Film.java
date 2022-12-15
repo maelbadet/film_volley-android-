@@ -22,21 +22,15 @@ public class Film {
 
     @ColumnInfo(name = "langueOriginale") public String langueOriginale;
 
-    public Film(String nom,String description, String vraiNom,  String URL, String date, String VO) {
-
-        this.titre = nom;
+    public Film(int uid, String titre, String titreOriginal, String description, String urlImage, String dateSortie, String langueOriginale) {
+        this.uid = uid;
+        this.titre = titre;
+        this.titreOriginal = titreOriginal;
         this.description = description;
-        this.titreOriginal = vraiNom;
-        this.urlImage = URL;
-        this.dateSortie = date;
-        this.langueOriginale = VO;
-
+        this.urlImage = urlImage;
+        this.dateSortie = dateSortie;
+        this.langueOriginale = langueOriginale;
     }
-
-    public Film() {
-
-    }
-
 
     public String getTitre() {
         return titre;
